@@ -1,0 +1,59 @@
+.comment-form {
+    background-color: #434c56;
+    padding: 2%;
+    margin-bottom: 2%;
+    height: 440px;
+    border-radius: 40px;
+    box-shadow: #b0a79b 0px 2px 5px;
+}
+
+.form-group {
+    padding-top: 1%;
+    background-color: #434c56;
+    text-align: left;
+}
+
+.form-group-button {
+    float: right;
+    margin-top: 1%;
+}
+
+.form-content {
+    background-color: #434c56;
+}
+
+/* BUTTON  */
+.submit-form {
+    --b: 3px;   /* border thickness */
+    --s: .15em; /* size of the corner */
+    --c: white;
+    
+    padding: calc(.05em + var(--s)) calc(.3em + var(--s));
+    color: var(--c);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--c) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .2em;
+}
+
+.submit-form:hover, .submit-form:focus-visible{
+    --_p: 0px;
+    outline-color: var(--c);
+    outline-offset: .05em;
+}
+
+.submit-form:active {
+    background: var(--c);
+    color: white;
+}
+  
+.submit-form {
+    font-family: system-ui, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}

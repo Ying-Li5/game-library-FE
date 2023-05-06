@@ -1,0 +1,65 @@
+/* Aside */
+ul {
+    color: white;
+    z-index: inherit;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+    text-align: left;
+    width: 100%;
+}
+
+.categories {
+    text-align: left;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.aside {
+    background-color: #434c56;
+}
+
+.aside:hover {
+    color: #967887;
+}
+
+/* grid  */
+.main-grid-container {
+    display: grid;
+    grid-template-columns: 0.15fr 1fr ;
+    grid-template-rows: 0.0fr 1fr 1fr;
+    grid-template-areas:
+    'aside game'
+    'aside game'
+    'aside game ';
+    gap: 1%;
+    padding: 1%;
+  }
+
+.grid-item-1 {
+    grid-area: aside;
+}
+
+.grid-item-2 {
+    grid-area: game;
+}
+
+/* responsive  */
+@media screen and (max-width: 800px) {
+    .main-grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr;
+        grid-template-areas: 
+        "game";
+    }
+
+    .grid-item-1 {
+        display: none;
+    }
+}

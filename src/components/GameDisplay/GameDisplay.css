@@ -1,0 +1,144 @@
+/* GRID CONTAINER  */
+.display-container {
+    background: #22262b;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120vh;
+    padding: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.09fr 0.5fr 0.3fr 0.5fr;
+    grid-template-areas: 
+    'title title'
+    'img info'
+    'form form'
+    'reviews reviews' ;
+}
+
+/* GAME TITLE  */
+.display-title {
+    background: #22262b;
+    grid-area: title;
+    text-align: left;
+    border-bottom: 1px #434c56 solid;
+}
+
+/* IMG  */
+.display-img {
+    background: #22262b;
+    grid-area: img;
+    padding-top: 2%;
+}
+
+.game-art-display {
+    width: auto;
+    height: auto;
+    justify-content: center;
+}
+
+/* GAME INFO  */
+.display-info {
+    background: #22262b;
+    grid-area: info;
+    padding-top: 2%;
+}
+
+.game-container-info, .game-title {
+    background: #22262b;
+    text-align: left;
+}
+
+/* DISPLAY FORM  */
+.display-form {
+    background: #22262b;
+    grid-area: form;
+}
+
+.add-title {
+    background: #22262b;
+    text-align: left;
+    border-bottom: 1px #434c56 solid;
+    padding-bottom: 0.5%;
+}
+
+/* DISPLAY REVIEWS  */
+.display-reviews {
+    background: #22262b;
+    grid-area: reviews;
+    border-bottom: 1px #434c56 solid;
+}
+
+.text-holders {
+    display: block;
+    background: #22262b;
+    padding-bottom: 0.5%;
+    margin-top: 2%;
+}
+
+.reviews-title {
+    background: #22262b;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.sort-reviews {
+    background: #22262b;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.title-holder {
+    float: left;
+}
+
+.sort-holder {
+    background: #22262b;
+    float: right;
+}
+
+.btn-light {
+    font-size: 12px;
+}
+
+.review-container {
+    border-top: 1px #434c56 solid;
+    margin-top: 3%;
+}
+
+/* BUTTON  */
+.sort-button {
+    --b: 3px;   /* border thickness */
+    --s: .15em; /* size of the corner */
+    --c: white;
+    
+    padding: calc(.05em + var(--s)) calc(.3em + var(--s));
+    color: var(--c);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--c) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .2em;
+}
+
+.sort-button:hover, .sort-button:focus-visible{
+    --_p: 0px;
+    outline-color: var(--c);
+    outline-offset: .05em;
+}
+
+.sort-button:active {
+    background: var(--c);
+    color: white;
+}
+  
+.sort-button {
+    font-family: system-ui, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}

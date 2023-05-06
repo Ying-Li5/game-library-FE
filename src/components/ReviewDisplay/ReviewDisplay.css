@@ -1,0 +1,44 @@
+.content, .reviewer-container, .reviewer-info, .review-container {
+    background-color: #22262b;
+    color: white;
+}
+
+.reviewer {
+    background-color: #22262b;
+    display: inline-block;
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: #9d9bb0 0px 2px 5px; 
+    text-align: left;
+}
+
+.avatar {
+    background-color: white;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.profile-img {
+    display: inline-flex;
+    background-color: #22262b;
+    padding-right: 5%;
+    height: 50px;
+}
+
+.reviewer-info {
+    padding-left: 5%;
+}
+
+.content-reviewer {
+    background-color: #22262b;
+    width: max-content;
+}
+
+.content-title {
+    background-color: #22262b;
+    font-weight: bold;
+    margin-bottom: 0;
+}

@@ -1,0 +1,37 @@
+.login-page {
+    background-color: #2d3339;
+    color: white;
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
+    padding: 6%;
+}
+
+h2, .mb-3, .form-label, a, .button {
+    background-color: #2d3339;
+}
+
+a {
+    background-color: #2d3339;
+    color: white
+}
+
+.help-area {
+    background-color: #2d3339;
+    display: inline-flex;
+    padding: 2%;
+}
+
+.forgot-password{
+    background-color: #2d3339;
+    margin: auto;
+    position: fixed;
+    left: 30%;
+}
+
+.no-account {
+    background-color: #2d3339;
+    margin: auto;
+    position: fixed;
+    left: 60%;
+}

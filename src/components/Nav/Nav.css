@@ -1,0 +1,74 @@
+/* NAVBAR STYLING STARTS */
+.navbar {
+    position: relative;
+    background-color: #2d3339;
+    width: 100%;
+}
+    
+.nav-links a {
+    color: white;
+}
+    
+/* LOGO */
+.logo {
+    width: 50px;
+    height: 50px;
+}
+    
+/* NAVBAR MENU */
+.menu {
+    background-color: #2d3339;
+    display: flex;
+    font-size: 18px;
+    margin-top: auto; 
+    margin-bottom: auto;
+    width: 50%;
+    float: left;
+}
+
+.item, .button {
+    background-color: #2d3339;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.link {
+    display: flex;
+    width: 5%;
+    height: 5%;
+}
+
+.link:hover {
+    color: #967887;
+    transition: 0.3s ease;
+}
+
+.logo-holder {
+    background-color: #2d3339;
+    width: fit-content; 
+}
+
+.logo {
+    background-color: #2d3339;
+}
+
+/* .searchbar {
+    display: flex;
+    float: right;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+    height: 50%;
+    border: none;
+    border-radius: 9px;
+} */
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        background-color: #2d3339;
+        width: max-content;
+    }
+}
