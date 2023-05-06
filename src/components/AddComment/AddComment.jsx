@@ -18,7 +18,7 @@ const AddComment = (props) => {
             createdAt: new Date()
         }
 
-        fetch(`https://game-library-be.herokuapp.com//review`, {
+        fetch(`https://game-library-be.herokuapp.com/review`, {
             method: "POST",
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(obj),
