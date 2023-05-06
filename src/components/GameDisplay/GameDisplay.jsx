@@ -46,7 +46,7 @@ const GameDisplay = (props) => {
     }, [])
 
     useEffect(() => {
-        const url = `https://game-library-be.herokuapp.com//review/game/${game_id}`
+        const url = `https://game-library-be.herokuapp.com/review/game/${game_id}`
         fetch(url, {
             method: "GET",
             headers: {'Content-Type': 'application/json'},
