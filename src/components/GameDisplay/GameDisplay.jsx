@@ -36,7 +36,7 @@ const GameDisplay = (props) => {
     }
 
     useEffect(() => {
-        const url = `http://localhost:8080/game/${game_id}`
+        const url = `https://game-library-be.herokuapp.com/game/${game_id}`
         fetch(url, {
             method: "GET",
             headers: {'Content-Type': 'application/json'},
@@ -46,7 +46,7 @@ const GameDisplay = (props) => {
     }, [])
 
     useEffect(() => {
-        const url = `http://localhost:8080/review/game/${game_id}`
+        const url = `https://game-library-be.herokuapp.com//review/game/${game_id}`
         fetch(url, {
             method: "GET",
             headers: {'Content-Type': 'application/json'},

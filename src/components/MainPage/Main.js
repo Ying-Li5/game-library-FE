@@ -11,7 +11,7 @@ export default function Main() {
     const [gameState, setGameState] = useState([]) //First one is the state, second one is a function to set the state
 
     useEffect(() => {
-        const url = `http://localhost:8080/game`
+        const url = `https://game-library-be.herokuapp.com//game`
         fetch(url, {
             method: "GET",
             headers: {'Content-Type': 'application/json'},
