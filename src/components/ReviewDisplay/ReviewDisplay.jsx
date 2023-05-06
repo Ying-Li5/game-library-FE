@@ -15,7 +15,7 @@ const ReviewDisplay = (props) => {
 
                                 <div className="reviewer-info">
                                     <p className="content-reviewer">
-                                        { review.author_id } 
+                                        { review.username } 
                                         <br />
                                         Score: { review.score }
                                     </p>
